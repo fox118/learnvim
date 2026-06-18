@@ -1,0 +1,14 @@
+{
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.leader": "<space>",
+  "vim.easymotion": false,
+  "vim.sneak": false,
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-p>": false,
+    "<C-a>": false
+  }
+}
