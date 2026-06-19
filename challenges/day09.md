@@ -1,40 +1,43 @@
-# Day 09 — Movement and small edits
+# Day 09 - Add a Missing Return
 
 Date: 2026-06-26
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `w`
-- `b`
-- `e`
-- `0`
 - `$`
-- `dd`
-- `dw`
-- `cw`
-- `yy`
-- `p`
+- A
+- search
+- line-end edits
 
 ## Challenge
 
-Use operators plus motions on the practice text. Try at least three combinations such as `dw`, `cw`, `dd`, `yy`, `p`, `0`, `$`, `w`, `b`, and `e`.
+Add the missing return behavior and save the package files under `work/day09/`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day09/input/go.mod`
+- `challenges/day09/input/score.go`
+- `challenges/day09/input/score_test.go`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day09/go.mod`
+- `work/day09/score.go`
+- `work/day09/score_test.go`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day09`.
+2. Copy the input file(s) into `work/day09/`.
+3. Edit only the files in `work/day09/`.
+4. Run `go run ./cmd/check day09`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day09/`.
+- [ ] `go run ./cmd/check day09` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

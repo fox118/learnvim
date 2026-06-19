@@ -1,38 +1,43 @@
-# Day 03 — Survival basics
+# Day 03 - Repair a Paragraph
 
 Date: 2026-06-20
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `h j k l`
-- `i`
-- `Esc`
-- `:w`
-- `:q`
-- `:wq`
-- `x`
-- `u`
+- w
+- b
+- e
+- dw
+- `cw`
+- yy
+- `p`
 
 ## Challenge
 
-Repeat part of `vimtutor`, then edit this file without arrow keys. Focus on getting back to Normal mode quickly and saving cleanly.
+Fix the paragraph, including repeated words, capitalization, and punctuation, then save it to `work/day03/paragraph.md`. Yank the final first sentence into `work/day03/yank.txt`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day03/input/paragraph.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day03/paragraph.md`
+- `work/day03/yank.txt`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day03`.
+2. Copy the input file(s) into `work/day03/`.
+3. Edit only the files in `work/day03/`.
+4. Run `go run ./cmd/check day03`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day03/`.
+- [ ] `go run ./cmd/check day03` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

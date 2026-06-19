@@ -1,36 +1,39 @@
-# Day 20 — Search and repeat
+# Day 20 - Search and Replace Review
 
 Date: 2026-07-07
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `/`
-- `n`
-- `N`
-- `.`
-- `*`
-- `:s/old/new/g`
+- controlled substitution
+- confirmation
+- n
+- N
 
 ## Challenge
 
-Open this repository in VS Code with VSCodeVim enabled. Complete the edits while also using one VS Code feature: Command Palette, Explorer, integrated terminal, source control, or search panel.
+Rename the product throughout active release-note content only, leaving historical notes unchanged. Save the result to `work/day20/release.md`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day20/input/release.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day20/release.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day20`.
+2. Copy the input file(s) into `work/day20/`.
+3. Edit only the files in `work/day20/`.
+4. Run `go run ./cmd/check day20`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day20/`.
+- [ ] `go run ./cmd/check day20` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

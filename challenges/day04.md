@@ -1,38 +1,41 @@
-# Day 04 — Survival basics
+# Day 04 - Normalize Headings
 
 Date: 2026-06-21
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `h j k l`
-- `i`
-- `Esc`
-- `:w`
-- `:q`
-- `:wq`
-- `x`
-- `u`
+- 0
+- `$`
+- I
+- A
+- `dd`
+- `p`
 
 ## Challenge
 
-Repeat part of `vimtutor`, then edit this file without arrow keys. Focus on getting back to Normal mode quickly and saving cleanly.
+Normalize the Markdown structure into one title, three sections, and clean bullet lists, then save it to `work/day04/outline.md`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day04/input/outline.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day04/outline.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day04`.
+2. Copy the input file(s) into `work/day04/`.
+3. Edit only the files in `work/day04/`.
+4. Run `go run ./cmd/check day04`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day04/`.
+- [ ] `go run ./cmd/check day04` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

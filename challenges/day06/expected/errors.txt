@@ -1,0 +1,5 @@
+ERROR payment timeout
+ERROR cache unavailable
+ERROR job failed
+ERROR missing config value
+ERROR email delivery failed

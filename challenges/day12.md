@@ -1,40 +1,40 @@
-# Day 12 — Movement and small edits
+# Day 12 - Format a Markdown Changelog
 
 Date: 2026-06-29
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `w`
-- `b`
-- `e`
-- `0`
-- `$`
-- `dd`
-- `dw`
-- `cw`
-- `yy`
-- `p`
+- paragraphs
+- line operations
+- Visual mode
+- yank
 
 ## Challenge
 
-Use operators plus motions on the practice text. Try at least three combinations such as `dw`, `cw`, `dd`, `yy`, `p`, `0`, `$`, `w`, `b`, and `e`.
+Format the changelog into sections at `work/day12/changelog.md` and yank the latest section into `work/day12/latest.md`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day12/input/changelog.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day12/changelog.md`
+- `work/day12/latest.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day12`.
+2. Copy the input file(s) into `work/day12/`.
+3. Edit only the files in `work/day12/`.
+4. Run `go run ./cmd/check day12`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day12/`.
+- [ ] `go run ./cmd/check day12` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

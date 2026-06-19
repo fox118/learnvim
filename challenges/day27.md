@@ -1,34 +1,46 @@
-# Day 27 — VS Code integration
+# Day 27 - Final Mixed Repair
 
 Date: 2026-07-14
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `Command Palette`
-- `Explorer focus`
-- `integrated terminal`
-- `VSCodeVim settings`
+- month review
+- Markdown
+- Go
+- extraction
 
 ## Challenge
 
-Use your preferred Vim-in-VS-Code workflow. Refine your personal cheatsheet and identify one habit you want to keep after this project.
+Fix the Markdown and Go files, then extract the summary to `work/day27/summary.md`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day27/input/report.md`
+- `challenges/day27/input/go.mod`
+- `challenges/day27/input/count.go`
+- `challenges/day27/input/count_test.go`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day27/report.md`
+- `work/day27/summary.md`
+- `work/day27/go.mod`
+- `work/day27/count.go`
+- `work/day27/count_test.go`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day27`.
+2. Copy the input file(s) into `work/day27/`.
+3. Edit only the files in `work/day27/`.
+4. Run `go run ./cmd/check day27`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day27/`.
+- [ ] `go run ./cmd/check day27` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

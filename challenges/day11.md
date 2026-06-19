@@ -1,40 +1,43 @@
-# Day 11 — Movement and small edits
+# Day 11 - Rename a Field
 
 Date: 2026-06-28
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `w`
-- `b`
-- `e`
-- `0`
-- `$`
-- `dd`
-- `dw`
-- `cw`
-- `yy`
-- `p`
+- n
+- N
+- `ciw`
+- careful replacement
 
 ## Challenge
 
-Use operators plus motions on the practice text. Try at least three combinations such as `dw`, `cw`, `dd`, `yy`, `p`, `0`, `$`, `w`, `b`, and `e`.
+Rename the `User` field to `Username` without changing unrelated words, then save the package files under `work/day11/`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day11/input/go.mod`
+- `challenges/day11/input/profile.go`
+- `challenges/day11/input/profile_test.go`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day11/go.mod`
+- `work/day11/profile.go`
+- `work/day11/profile_test.go`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day11`.
+2. Copy the input file(s) into `work/day11/`.
+3. Edit only the files in `work/day11/`.
+4. Run `go run ./cmd/check day11`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day11/`.
+- [ ] `go run ./cmd/check day11` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

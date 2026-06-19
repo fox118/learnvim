@@ -1,0 +1,9 @@
+name,email
+Ada Lovelace , ada@example.com
+Grace Hopper,grace@example.com
+Grace Hopper,grace@example.com
+Rob Pike ,rob@example.com
+Katherine Johnson , katherine@example.com
+Ken Thompson, ken@example.com
+Ken Thompson, ken@example.com
+Margaret Hamilton ,margaret@example.com

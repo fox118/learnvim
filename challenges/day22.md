@@ -1,34 +1,38 @@
-# Day 22 — VS Code integration
+# Day 22 - VS Code Navigation Task
 
 Date: 2026-07-09
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `Command Palette`
-- `Explorer focus`
-- `integrated terminal`
-- `VSCodeVim settings`
+- VS Code search
+- Vim editing
 
 ## Challenge
 
-Use your preferred Vim-in-VS-Code workflow. Refine your personal cheatsheet and identify one habit you want to keep after this project.
+Use file search to find the broken note under `input/`, ignore the decoy file, and save the fixed file to `work/day22/found-note.md`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day22/input/archive/readme.md`
+- `challenges/day22/input/deep/found-note.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day22/found-note.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day22`.
+2. Copy the input file(s) into `work/day22/`.
+3. Edit only the files in `work/day22/`.
+4. Run `go run ./cmd/check day22`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day22/`.
+- [ ] `go run ./cmd/check day22` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

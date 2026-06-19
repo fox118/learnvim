@@ -1,36 +1,42 @@
-# Day 18 — Search and repeat
+# Day 18 - Extract a Go Helper
 
 Date: 2026-07-05
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `/`
-- `n`
-- `N`
-- `.`
-- `*`
-- `:s/old/new/g`
+- yanking blocks
+- pasting
+- changing identifiers
 
 ## Challenge
 
-Open this repository in VS Code with VSCodeVim enabled. Complete the edits while also using one VS Code feature: Command Palette, Explorer, integrated terminal, source control, or search panel.
+Extract the repeated trim/lowercase logic into `cleanName`, then save the package files under `work/day18/`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day18/input/go.mod`
+- `challenges/day18/input/names.go`
+- `challenges/day18/input/names_test.go`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day18/go.mod`
+- `work/day18/names.go`
+- `work/day18/names_test.go`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day18`.
+2. Copy the input file(s) into `work/day18/`.
+3. Edit only the files in `work/day18/`.
+4. Run `go run ./cmd/check day18`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day18/`.
+- [ ] `go run ./cmd/check day18` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

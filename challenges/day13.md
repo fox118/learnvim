@@ -1,40 +1,38 @@
-# Day 13 — Movement and small edits
+# Day 13 - Fix Quoted Strings
 
 Date: 2026-06-30
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `w`
-- `b`
-- `e`
-- `0`
-- `$`
-- `dd`
-- `dw`
-- `cw`
-- `yy`
-- `p`
+- `ci"`
+- `di"`
+- repeat edits
 
 ## Challenge
 
-Use operators plus motions on the practice text. Try at least three combinations such as `dw`, `cw`, `dd`, `yy`, `p`, `0`, `$`, `w`, `b`, and `e`.
+Fix quotes, capitalization, and sentence punctuation across the message lines, then save the result to `work/day13/messages.txt`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day13/input/messages.txt`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day13/messages.txt`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day13`.
+2. Copy the input file(s) into `work/day13/`.
+3. Edit only the files in `work/day13/`.
+4. Run `go run ./cmd/check day13`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day13/`.
+- [ ] `go run ./cmd/check day13` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

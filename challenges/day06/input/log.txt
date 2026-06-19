@@ -1,0 +1,12 @@
+INFO boot complete
+WARN retrying request
+ERROR payment timeout
+INFO user loaded
+ERROR cache unavailable
+WARN slow query
+ERROR job failed
+INFO worker restarted
+ERROR missing config value
+WARN queue depth high
+ERROR email delivery failed
+INFO shutdown requested

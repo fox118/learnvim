@@ -1,0 +1,7 @@
+status="ready"
+mode="practice"
+owner="fox"
+message="Vim makes editing deliberate."
+summary="Normal mode keeps changes calm."
+note="Use text objects carefully."
+fallback="Check output before guessing."

@@ -1,34 +1,39 @@
-# Day 24 — VS Code integration
+# Day 24 - Multi-file Markdown Cleanup
 
 Date: 2026-07-11
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `Command Palette`
-- `Explorer focus`
-- `integrated terminal`
-- `VSCodeVim settings`
+- buffers
+- repeatable command patterns
 
 ## Challenge
 
-Use your preferred Vim-in-VS-Code workflow. Refine your personal cheatsheet and identify one habit you want to keep after this project.
+Apply the same cleanup rules to both Markdown files and save them under `work/day24/`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day24/input/alpha.md`
+- `challenges/day24/input/beta.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day24/alpha.md`
+- `work/day24/beta.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day24`.
+2. Copy the input file(s) into `work/day24/`.
+3. Edit only the files in `work/day24/`.
+4. Run `go run ./cmd/check day24`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day24/`.
+- [ ] `go run ./cmd/check day24` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

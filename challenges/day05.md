@@ -1,38 +1,39 @@
-# Day 05 — Survival basics
+# Day 05 - Fix CSV-like Text
 
 Date: 2026-06-22
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `h j k l`
-- `i`
-- `Esc`
-- `:w`
-- `:q`
-- `:wq`
-- `x`
-- `u`
+- `.`
+- f
+- ;
+- small substitutions
 
 ## Challenge
 
-Repeat part of `vimtutor`, then edit this file without arrow keys. Focus on getting back to Normal mode quickly and saving cleanly.
+Remove duplicate rows, fix comma spacing across the contact list, and save the result to `work/day05/contacts.txt`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day05/input/contacts.txt`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day05/contacts.txt`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day05`.
+2. Copy the input file(s) into `work/day05/`.
+3. Edit only the files in `work/day05/`.
+4. Run `go run ./cmd/check day05`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day05/`.
+- [ ] `go run ./cmd/check day05` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

@@ -1,34 +1,40 @@
-# Day 26 — VS Code integration
+# Day 26 - Yank Required Content
 
 Date: 2026-07-13
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `Command Palette`
-- `Explorer focus`
-- `integrated terminal`
-- `VSCodeVim settings`
+- Visual mode
+- y
+- registers
+- paste to a new file
 
 ## Challenge
 
-Use your preferred Vim-in-VS-Code workflow. Refine your personal cheatsheet and identify one habit you want to keep after this project.
+Fix the file at `work/day26/guide.md` and save only the Commands section to `work/day26/commands.md`.
 
-## Practice text
+Start from these file(s):
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+- `challenges/day26/input/guide.md`
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+Expected output path(s):
 
-## Done checklist
+- `work/day26/guide.md`
+- `work/day26/commands.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day26`.
+2. Copy the input file(s) into `work/day26/`.
+3. Edit only the files in `work/day26/`.
+4. Run `go run ./cmd/check day26`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day26/`.
+- [ ] `go run ./cmd/check day26` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?

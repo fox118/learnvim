@@ -1,38 +1,44 @@
-# Day 01 — Survival basics
+# Day 01 - Fix a Short Note
 
 Date: 2026-06-18
 Timebox: 10 minutes
 
-## Target commands
+## Target Commands
 
-- `h j k l`
+- Normal mode
+- Insert mode
+- `h/j/k/l`
+- `x`
 - `i`
 - `Esc`
 - `:w`
-- `:q`
-- `:wq`
-- `x`
-- `u`
 
 ## Challenge
 
-Run `vimtutor` for the first part of your session, then return here and edit the practice block below using `h/j/k/l`, `i`, `Esc`, `x`, and `u`.
+Fix the Markdown note by cleaning headings, sentences, and bullets, then save the corrected file to `work/day01/note.md`.
 
-## Practice text
+The starting note has repeated words, a typo, missing punctuation, inconsistent capitalization, and one line plus one bullet that should be removed.
 
-Edit this paragraph during the session. Move through the words, delete one repeated word, change one phrase, yank and paste one sentence, then undo and redo at least once. The goal is not perfection; the goal is building comfort with modal editing.
+Start from these file(s):
 
-Repeated repeated words are intentionally included here. Replace this sentence with your own one-sentence summary of what you practiced today.
+- `challenges/day01/input/note.md`
 
-## Done checklist
+Expected output path(s):
+
+- `work/day01/note.md`
+
+## Suggested Workflow
+
+1. Create the work folder: `mkdir -p work/day01`.
+2. Copy the input file(s) into `work/day01/`.
+3. Edit only the files in `work/day01/`.
+4. Run `go run ./cmd/check day01`.
+5. If the checker reports a mismatch, reopen your work file and fix it.
+
+## Done Checklist
 
 - [ ] I practiced for 10 focused minutes.
 - [ ] I avoided arrow keys unless stuck.
-- [ ] I used at least three target commands.
+- [ ] I saved the requested file(s) under `work/day01/`.
+- [ ] `go run ./cmd/check day01` passes.
 - [ ] I added a note to `notes/progress-log.md`.
-
-## Reflection
-
-What felt better today?
-
-What still felt awkward?
