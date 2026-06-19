@@ -62,7 +62,7 @@ func run() error {
 			continue
 		}
 		if !bytes.Equal(normalizeNewlines(actual), normalizeNewlines(expected)) {
-			failures = append(failures, fmt.Sprintf("content mismatch in %s", workPath))
+			failures = append(failures, fmt.Sprintf("content mismatch in %s\n%s", workPath, firstMismatchHint(expected, actual)))
 		}
 	}
 
@@ -144,6 +144,39 @@ func regularFiles(root string) ([]string, error) {
 
 func normalizeNewlines(content []byte) []byte {
 	return bytes.ReplaceAll(content, []byte("\r\n"), []byte("\n"))
+}
+
+func firstMismatchHint(expected, actual []byte) string {
+	expectedLines := strings.Split(string(normalizeNewlines(expected)), "\n")
+	actualLines := strings.Split(string(normalizeNewlines(actual)), "\n")
+
+	lineCount := len(expectedLines)
+	if len(actualLines) > lineCount {
+		lineCount = len(actualLines)
+	}
+
+	for i := 0; i < lineCount; i++ {
+		expectedLine := lineAt(expectedLines, i)
+		actualLine := lineAt(actualLines, i)
+		if expectedLine != actualLine {
+			return fmt.Sprintf("  first difference at line %d:\n    expected: %s\n    actual:   %s", i+1, displayLine(expectedLine), displayLine(actualLine))
+		}
+	}
+	return "  files differ, but no line difference was found"
+}
+
+func lineAt(lines []string, index int) string {
+	if index >= len(lines) {
+		return "<end of file>"
+	}
+	return lines[index]
+}
+
+func displayLine(line string) string {
+	if line == "" {
+		return "<blank line>"
+	}
+	return line
 }
 
 func containsGoFiles(files []string) bool {
